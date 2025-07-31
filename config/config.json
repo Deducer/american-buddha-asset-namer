@@ -1,0 +1,29 @@
+{
+    "naming_patterns": {
+        "default": "{date}_{description}_{sequence}",
+        "documentary": "{project}_{scene}_{date}_{number}",
+        "location_based": "{location}_{subject}_{action}_{counter}"
+    },
+    "supported_formats": {
+        "images": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp"],
+        "videos": [".mp4", ".mov", ".avi", ".mkv", ".wmv", ".flv", ".webm"]
+    },
+    "ai_settings": {
+        "model": "gpt-4o",
+        "max_tokens": 150,
+        "temperature": 0.7,
+        "detail_level": "auto"
+    },
+    "processing": {
+        "batch_size": 10,
+        "preview_thumbnails": true,
+        "backup_originals": true,
+        "max_file_size_mb": 100
+    },
+    "output": {
+        "date_format": "%Y-%m-%d",
+        "sequence_padding": 3,
+        "lowercase_names": false,
+        "replace_spaces": "_"
+    }
+}
